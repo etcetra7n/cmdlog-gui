@@ -6,7 +6,7 @@ cmdlog GUI is a UI interface for manual log entry into log files
 $ python cmdlog-gui.py example.log
 ```
 
-![cmdlog GUI interface](5.png "cmdlog GUI interface")
+![cmdlog GUI interface](a.png "cmdlog GUI interface")
 
 ![example.log file](log_file_screenshot.png "example.log")
 
