@@ -1,4 +1,4 @@
-from tkinter import Tk, Text,Button, mainloop
+from tkinter import Tk, Text,Button, mainloop, font
 from os import system
 from sys import argv
 
@@ -13,14 +13,17 @@ def main():
     root.geometry("700x300")
     root.eval('tk::PlaceWindow . center')
     root.title(f"Log Entry: "+argv[1])
-    root.config(bg='#22272E')
+    root.config(bg='#1F1F1F')
     inputtxt = Text(
         root,
         height=11,
-        width = 70,
-        bg = "#2D333B",
-        fg = "#ADBAC7"
+        width = 60,
+        bg = "#303134",
+        fg =  "#ADBAC7",
+        insertbackground="#E8EAED",
     )
+    text_font = font.Font(family="Lucida Console", size=12)
+    inputtxt.configure(font=text_font)
     button = Button(
         root,
         height = 2,
